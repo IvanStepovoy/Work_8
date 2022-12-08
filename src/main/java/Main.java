@@ -16,6 +16,7 @@ public class Main {
         Calculator calculator = new Calculator();
 
 
+
         switch (inpOper) {
 
 
@@ -30,6 +31,9 @@ public class Main {
 
 
         }
+
+        System.out.println(calculator.getResult());
+
 
 
     }

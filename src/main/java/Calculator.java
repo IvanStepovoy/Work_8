@@ -8,15 +8,17 @@ public class Calculator {
     private long result;
 
     public long setResult(long c) {
-        this.result = result;
-        return c;
+        this.result = c;
+        return result;
     }
+
+
 
     public long add(){
 
         System.out.println("Please enter enter the first number:  ");
         long a = new Scanner(System.in).nextInt();
-        System.out.println("Please enter enter the first number:  ");
+        System.out.println("Please enter enter the second number:  ");
         long b = new Scanner(System.in).nextInt();
         long c = a + b;
 
@@ -27,7 +29,7 @@ public class Calculator {
 
         System.out.println("Please enter enter the first number:  ");
         long a = new Scanner(System.in).nextInt();
-        System.out.println("Please enter enter the first number:  ");
+        System.out.println("Please enter enter the second number:  ");
         long b = new Scanner(System.in).nextInt();
         long c = a - b;
 
@@ -38,7 +40,7 @@ public class Calculator {
 
         System.out.println("Please enter enter the first number:  ");
         long a = new Scanner(System.in).nextInt();
-        System.out.println("Please enter enter the first number:  ");
+        System.out.println("Please enter enter the second number:  ");
         long b = new Scanner(System.in).nextInt();
         long c = a * b;
 
@@ -49,16 +51,20 @@ public class Calculator {
 
         System.out.println("Please enter enter the first number:  ");
         long a = new Scanner(System.in).nextInt();
-        System.out.println("Please enter enter the first number:  ");
+        System.out.println("Please enter enter the second number:  ");
         long b = new Scanner(System.in).nextInt();
         long c = a / b;
 
         if( b==0 ){
 
-            throw new InvalidParameterException("'b' it shouldn't be '0'");
+            throw new InvalidParameterException("second number shouldn't be '0'");
         }
 
         return setResult(c);
+    }
+
+    public long getResult() {
+        return result;
     }
 
 
