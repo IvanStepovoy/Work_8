@@ -1,34 +1,66 @@
 import java.security.InvalidParameterException;
+import java.util.Scanner;
 
 public class Calculator {
 
+
+
     private long result;
 
-    public long add(long a, long b){
-
-        return a + b;
-
+    public long setResult(long c) {
+        this.result = result;
+        return c;
     }
 
-    public long sub(long a, long b){
+    public long add(){
 
-        return a - b;
+        System.out.println("Please enter enter the first number:  ");
+        long a = new Scanner(System.in).nextInt();
+        System.out.println("Please enter enter the first number:  ");
+        long b = new Scanner(System.in).nextInt();
+        long c = a + b;
 
+        return setResult(c);
     }
 
-    public long mul(long a, long b){
+    public long sub(){
 
-        return a * b;
+        System.out.println("Please enter enter the first number:  ");
+        long a = new Scanner(System.in).nextInt();
+        System.out.println("Please enter enter the first number:  ");
+        long b = new Scanner(System.in).nextInt();
+        long c = a - b;
 
+        return setResult(c);
     }
 
-    public long div(long a, long b){
+    public long mul(){
 
-        if(b==0){
-            throw new InvalidParameterException("b=0");
+        System.out.println("Please enter enter the first number:  ");
+        long a = new Scanner(System.in).nextInt();
+        System.out.println("Please enter enter the first number:  ");
+        long b = new Scanner(System.in).nextInt();
+        long c = a * b;
+
+        return setResult(c);
+    }
+
+    public long div(){
+
+        System.out.println("Please enter enter the first number:  ");
+        long a = new Scanner(System.in).nextInt();
+        System.out.println("Please enter enter the first number:  ");
+        long b = new Scanner(System.in).nextInt();
+        long c = a / b;
+
+        if( b==0 ){
+
+            throw new InvalidParameterException("'b' it shouldn't be '0'");
         }
 
-        return a / b;
-
+        return setResult(c);
     }
+
+
 }
+
