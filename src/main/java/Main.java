@@ -20,19 +20,41 @@ public class Main {
         switch (inpOper) {
 
 
-            case 1: calculator.add();
+            case 1: calculator.add(3,5);
                 break;
-            case 2: calculator.sub();
+            case 2: calculator.sub(5,4);
                 break;
-            case 3: calculator.mul();
+            case 3: calculator.mul(7,4);
                 break;
-            case 4: calculator.div();
+            case 4: calculator.div(8,2);
                 break;
 
 
         }
 
         System.out.println(calculator.getResult());
+
+
+        int inpOper2 = new Scanner(System.in).nextInt();
+
+        Calculator calculator1 = new Calculator();
+
+
+
+        switch (inpOper) {
+
+
+            case 1: calculator.add(3);
+                break;
+            case 2: calculator.sub(5);
+                break;
+            case 3: calculator.mul(4);
+                break;
+            case 4: calculator.div(2);
+                break;
+
+
+        }
 
 
 
