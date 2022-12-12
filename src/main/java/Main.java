@@ -28,7 +28,7 @@ public class Main {
                 break;
             case 3: calculator.mul(7,4);
                 break;
-            case 4: calculator.div(8,2);
+            case 4: calculator.div(5,2);
                 break;
 
 

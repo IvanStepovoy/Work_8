@@ -13,13 +13,25 @@ public class Calculator {
         return result;
     }
 
-    public void takeVar () {
+    public long getResult() {
+        return result;
+    }
+
+
+    public long takeVar1 () {
 
         System.out.println("Please enter enter the first number:  ");
         long firstVar = new Scanner(System.in).nextInt();
+
+       return firstVar;
+    }
+
+    public long takeVar2 () {
+
         System.out.println("Please enter enter the second number:  ");
         long secondVar = new Scanner(System.in).nextInt();
 
+        return secondVar;
     }
 
 
@@ -57,9 +69,7 @@ public class Calculator {
         return setResult(c);
     }
 
-    public long getResult() {
-        return result;
-    }
+
 
     //Overload Block
     public long add(long b){
