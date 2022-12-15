@@ -1,10 +1,20 @@
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
-    Calculator calculator = new Calculator();
+
+    Calculator calculator;
+
+
+    @BeforeEach
+    void prepareData() {
+
+        calculator = new Calculator();
+
+    }
 
     @Test
     void testSetResultMethod() {
@@ -25,22 +35,22 @@ class CalculatorTest {
 
 
 
-    @Test
-    void testTakeVar1Method() {
+ /*   @Test
+      void testTakeVar1Method() {
 
         assertEquals(8, calculator.takeVar1());
 
 
 
     }
-
-    @Test
+*/
+/*    @Test
     void testTakeVar2Method() {
 
         assertEquals(5, calculator.takeVar1());
 
     }
-
+*/
 
 
 
